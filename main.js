@@ -1,3 +1,5 @@
+/// <reference path="./libraries/p5.global-mode.d.ts"/>
+
 let song, fft;
 
 function preload() {
@@ -17,7 +19,6 @@ function setup() {
     //set up music
     fft = new p5.FFT();
     fft.setInput(song);
-
 }
 
 function draw() {
